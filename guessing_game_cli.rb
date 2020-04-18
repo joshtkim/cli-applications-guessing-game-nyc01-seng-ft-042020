@@ -6,9 +6,9 @@ def run_guessing_game
 
   while guess != "exit" do
     if guess == random_number
-  	puts "Sorry! the computer guessed #{random_number}"
+  	puts "Goodbye!"
   else guess != random_number
-    puts "Goodbye!"
+    puts "Sorry! the computer guessed #{random_number}"
   	guess = gets.chomp.to_i
     break
   end
