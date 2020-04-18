@@ -13,5 +13,3 @@ elsif user_input == "exit"
 end
 
 end
-
-run_guessing_game
