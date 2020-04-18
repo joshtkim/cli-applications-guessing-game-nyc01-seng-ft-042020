@@ -1,8 +1,7 @@
 
 def run_guessing_game
-  puts "Welcome to the guessing game!"
   random_number = rand(6)
-  puts "Pick any number between 0 and 5:"
+  puts "Pick any number between 0 and 6"
   guess = gets.chomp.to_i
 
   until guess == random_number
