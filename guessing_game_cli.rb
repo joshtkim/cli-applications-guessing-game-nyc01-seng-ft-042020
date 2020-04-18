@@ -10,5 +10,4 @@ elsif user_input != computer_number.to_s
 elsif user_input == "exit"
   puts "Goodbye!"
 end
-puts "Goodbye!"
 end
