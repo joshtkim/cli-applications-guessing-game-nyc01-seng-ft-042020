@@ -4,13 +4,14 @@ def run_guessing_game
   puts "Pick any number between 1 and 6"
   guess = gets.chomp.to_i
 
-  if guess == random_number
+  while guess != "exit" do
+    if guess == random_number
   	puts "You guessed the correct number!"
-    if guess == "exit"
-    puts "Goodbye!"
+  else guess != random_number
+    puts "Sorry! the computer guessed #{random_number}"
   	guess = gets.chomp.to_i
   end
 end
 
-  puts "Sorry! the computer guessed #{random_number}"
+  puts "Goodbye!""
 end
