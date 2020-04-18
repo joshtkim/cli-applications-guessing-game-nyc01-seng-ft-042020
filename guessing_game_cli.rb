@@ -5,9 +5,9 @@ def run_guessing_game
   guess = gets.chomp.to_i
 
   if guess == random_number
-  	puts "Sorry! the computer guessed #{random_number}"
+  	puts "You guessed the correct number!"
   	guess = gets.chomp.to_i
   end
 
-  puts " You Da Man Brah!"
+  puts "Sorry! the computer guessed #{random_number}"
 end
