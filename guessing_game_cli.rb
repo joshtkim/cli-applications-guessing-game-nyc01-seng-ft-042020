@@ -10,6 +10,7 @@ def run_guessing_game
     puts "Goodbye!"
   	guess = gets.chomp.to_i
   end
+end
 
   puts "Sorry! the computer guessed #{random_number}"
 end
