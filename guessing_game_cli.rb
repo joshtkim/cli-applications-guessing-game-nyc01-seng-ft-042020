@@ -4,7 +4,7 @@ def run_guessing_game
   puts "Pick any number between 0 and 6"
   guess = gets.chomp.to_i
 
-  until guess == random_number
+  if guess == random_number
   	puts "Sorry! the computer guessed #{random_number}"
   	guess = gets.chomp.to_i
   end
