@@ -5,7 +5,7 @@ def run_guessing_game
   guess = gets.chomp.to_i
 
   until guess == random_number
-  	puts "You suck do it again!"
+  	puts "Sorry! the computer guessed #{random_number}"
   	guess = gets.chomp.to_i
   end
 
