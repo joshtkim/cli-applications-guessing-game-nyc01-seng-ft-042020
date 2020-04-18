@@ -1,15 +1,13 @@
 
 def run_guessing_game
-  puts "Guess a number between 1 and 6"
-    number = rand(1..6).to_s
-  user_input = gets.chomp
+  puts "Welcome to the guessing game!"
+  random_number = rand(6)
+  puts "Pick any number between 0 and 5:"
+  guess = gets.chomp.to_i
 
-if user_input == number.to_s
-  return "You guessed the correct number!"
-else user_input != number.to_s
-  return "Sorry! The computer guessed #{number}"
-else user_input == "exit"
-  puts "Goodbye!"
-end
+  until guess == random_number
+  	puts "You suck do it again!"
+  	guess = gets.chomp.to_i
+  end
 
-end
+  puts " You Da Man Brah!"
